@@ -1,18 +1,13 @@
 import "reflect-metadata";
-
+import { importSchema } from "graphql-import";
 import { GraphQLServer } from "graphql-yoga";
-// ... or using `require()`
-// const { GraphQLServer } = require('graphql-yoga')
+import { resolvers } from "./resolvers";
 
-const typeDefs = `
-  type Query {
-    hello(name: String): String!
-  }
-`;
+const typeDefs = importSchema("schema.graphql");
 
 const resolvers = {
   Query: {
-    hello: (_, { name }) => `Hello ${name || "World"}`
+    hello: (_: any, { name }: any) => `Bye ${name || "World"}`
   }
 };
 
