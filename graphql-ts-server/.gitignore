@@ -6,3 +6,5 @@ tmp/
 temp/
 redis-stable/
 redis-stable.tar.gz
+dump.redis
+dump.rdb
