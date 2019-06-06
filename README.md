@@ -12,3 +12,10 @@
 - Bitmaps
 - Hyperlogs
 - Geospatial Indexes
+
+## etc..
+
+- NoSQL
+- Key Value
+- In Memory
+- Not CPU Intensive
